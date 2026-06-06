@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bug Explainer</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+  <div class="app">
+    <div class="sidebar">
+      <div class="logo">
+        <div class="logo-icon">🐛</div>
+        <div class="logo-text">Bug<span>Explainer</span></div>
+      </div>
+      <p class="sidebar-desc">
+        Paste any error message or buggy code and AI will explain what went wrong and how to fix it.
+      </p>
+      <div class="lang-tags">
+        <span>Python</span>
+        <span>JavaScript</span>
+        <span>Java</span>
+        <span>C++</span>
+        <span>React</span>
+        <span>All Languages</span>
+      </div>
+      <div class="sidebar-footer">
+        <p>Powered by Groq AI</p>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="chat-header">
+        <div>
+          <div class="chat-header-title">AI Bug Explainer</div>
+          <div class="chat-header-sub">Paste your error and get instant fix</div>
+        </div>
+        <button class="clear-btn" onclick="clearAll()">Clear</button>
+      </div>
+
+      <div class="content">
+        <div class="input-section">
+          <label>Paste your error message or buggy code</label>
+          <textarea id="bugInput" placeholder="Example:
+TypeError: Cannot read properties of undefined (reading 'map')
+
+Or paste your buggy code here..."></textarea>
+          <button class="explain-btn" onclick="explainBug()" id="explainBtn">
+            🔍 Explain My Bug
+          </button>
+        </div>
+
+        <div class="output-section" id="outputSection">
+          <label>AI Explanation</label>
+          <div class="output-box" id="outputBox"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
