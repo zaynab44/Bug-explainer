@@ -1,50 +1,50 @@
-# 🐛 BugExplainer — AI-Powered Bug Fixing Tool
+# Bug Explainer
 
-An AI-powered web app that explains your code errors in simple words and gives you the exact fix instantly.
+An AI-powered web application that explains code errors in plain English and provides instant fixes. Paste any error message or buggy code and get a clear explanation of what went wrong and how to resolve it.
 
-## 🚀 Live Demo
-Coming soon...
+## Live Demo
+https://bug-explainer.up.railway.app/
 
-## ✨ Features
-- Paste any error message or buggy code
-- AI explains what went wrong in simple words
-- AI gives the fixed code with explanation
-- Supports all programming languages
-- Clean dark themed UI
-- Works with Python, JavaScript, React, Java, C++ and more
+## Features
 
-## 🛠️ Tech Stack
+- Explains any error message in simple language
+- Provides the corrected code with explanation
+- Supports all major programming languages
+- Clean dark themed interface
+
+## Tech Stack
+
 - Python
 - Flask
-- Groq API (LLaMA 3.3 70B)
-- HTML CSS JavaScript
+- Groq API — LLaMA 3.3 70B
+- HTML, CSS, JavaScript
 
-## ⚙️ Installation & Setup
+## Getting Started
 
-### 1. Clone the repository
-git clone https://github.com/zaynab44/bug-explainer.git
-cd bug-explainer
+Clone the repository and navigate to the project folder.
 
-### 2. Create virtual environment
+Create a virtual environment and activate it:
 python -m venv venv
 venv\Scripts\activate
 
-### 3. Install dependencies
-pip install flask flask-cors groq python-dotenv
+Install dependencies:
+pip install -r requirements.txt
 
-### 4. Add API key
-Create a .env file and add:
-GROQ_API_KEY=your_groq_key_here
+Create a .env file and add your Groq API key:
+GROQ_API_KEY=your_key_here
 
-### 5. Run the app
+Run the application:
 python app.py
 
-### 6. Open in browser
+Open in browser:
 http://localhost:5000
 
-## 🔑 Getting API Keys
-Groq API (Free) → https://console.groq.com
+## API Key
 
-## 👩‍💻 Author
-Zainab — BS Information Technology
+Get a free Groq API key at https://console.groq.com
+
+## Author
+
+Zainab
+BS Information Technology
 University of Lahore
